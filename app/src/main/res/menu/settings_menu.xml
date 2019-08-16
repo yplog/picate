@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item app:showAsAction="always"
+          android:id="@+id/favorites"
+          android:icon="@drawable/ic_favorite_white_24dp"
+          android:title=""/>
+
+    <item android:id="@+id/show_more"
+          android:title=""
+          android:icon="@drawable/ic_settings_white_24dp"
+          app:showAsAction="always">
+
+        <menu>
+
+            <item android:id="@+id/profile"
+                  android:title="@string/profile"
+                  android:icon="@drawable/ic_person_212121_24dp"/>
+
+            <item android:id="@+id/support"
+                  android:title="@string/support"
+                  android:icon="@drawable/ic_flag_black_24dp"/>
+
+            <item android:id="@+id/signout"
+                  android:title="@string/sign_out"
+                  android:icon="@drawable/ic_exit_to_app_212121_24dp"/>
+
+        </menu>
+
+    </item>
+</menu>

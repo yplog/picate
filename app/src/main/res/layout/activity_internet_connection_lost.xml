@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InternetConnectionLostActivity">
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp" app:srcCompat="@drawable/ic_signal_wifi_off_black_24dp"
+            android:id="@+id/imageViewLost"
+            app:layout_constraintStart_toStartOf="@+id/buttonSettings" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/buttonSettings" android:layout_marginEnd="8dp"
+            android:layout_marginTop="148dp"
+            app:layout_constraintTop_toTopOf="parent"
+    />
+    <Button
+            android:text="SETTINGS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSettings"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.498" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLost" app:layout_constraintVertical_bias="0.247"
+            android:textSize="18sp"/>
+    <TextView
+            android:text="You must be connected to mobile or wifi."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLost" android:textSize="18sp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLost" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSettings"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
